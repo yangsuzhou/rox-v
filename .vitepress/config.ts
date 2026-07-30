@@ -32,7 +32,6 @@ export default defineConfig({
                     { text: "Collapse 折叠面板", link: "/components/collapse" },
                     { text: "Loading 加载", link: "/components/loading" },
                     { text: "Toast 轻提示", link: "/components/toast" },
-                    { text: "Hover 悬停", link: "/components/hover" },
                     { text: "DropMenu 下拉菜单", link: "/components/dropmenu" },
                     { text: "FrameSlide 相框滑块", link: "/components/frame-slide" },
                     { text: "FadeInOut 淡入淡出", link: "/components/fade-in-out" },

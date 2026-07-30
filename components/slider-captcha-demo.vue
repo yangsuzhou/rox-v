@@ -5,6 +5,7 @@
         :verify="verify"
         @success="onSuccess"
         @fail="onFail"
+        track-class="track-container"
     />
 </template>
 
@@ -22,3 +23,8 @@ function onFail() {
     console.log("验证失败");
 }
 </script>
+<style lang="css">
+.track-container {
+    height: 40px;
+}
+</style>

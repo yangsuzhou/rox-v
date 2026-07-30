@@ -8,7 +8,7 @@ hero:
     actions:
         - theme: brand
           text: 快速开始
-          link: /index
+          link: /components/button
         - theme: alt
           text: 组件总览
           link: /components/button
@@ -19,7 +19,7 @@ features:
     - title: 指令
       details: v-lazy 图片懒加载、v-fade 显隐淡入，几行代码即可为元素添加高性能行为。
     - title: Hooks
-      details:  IntersectionObserver、滚动定位、横向拖拽、页面可见性等组合式函数，复用视口与滚动逻辑。
+      details: IntersectionObserver、滚动定位、横向拖拽、页面可见性等组合式函数，复用视口与滚动逻辑。
     - title: 轮询工具
       details: tick 提供可控制的轮询调度，支持 start / stop / once / delay。
 ---

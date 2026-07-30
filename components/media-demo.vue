@@ -6,6 +6,7 @@
             :lazy="true"
             :pause-when-out-viewport="true"
             style="width: 100%; height: 200px; display: block"
+            :observe-options="{ threshold: 0.3, rootMargin: '-200px' }"
         />
     </div>
 </template>
