@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vitepress dev",
+        "dev": "vitepress dev && cp .vitepress/public/favicon.ico .vitepress/dist/favicon.ico",
         "build": "vitepress build && cp .vitepress/public/favicon.ico .vitepress/dist/favicon.ico",
         "preview": "vitepress preview"
     },

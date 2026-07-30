@@ -24,7 +24,7 @@
             </div>
         </div>
         <div style="margin-top: 12px">
-            <Button @click="scroll('[data-item=\\'10\\']')">将第 10 项滚动到中心</Button>
+            <Button @click="scrollTo10">将第 10 项滚动到中心</Button>
         </div>
     </div>
 </template>
@@ -33,4 +33,5 @@
 import { Button, useScrollToCenter } from "@a-drowned-fish/rox-v";
 
 const { scrollContainerRef, scroll } = useScrollToCenter();
+const scrollTo10 = () => scroll("[data-item='10']");
 </script>

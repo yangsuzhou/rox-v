@@ -24,7 +24,7 @@
             </div>
         </div>
         <div style="margin-top: 12px">
-            <Button @click="scroll('[data-item=\\'18\\']')">将第 18 项滚动到视口边缘</Button>
+            <Button @click="scrollTo18">将第 18 项滚动到视口边缘</Button>
         </div>
     </div>
 </template>
@@ -33,4 +33,5 @@
 import { Button, useScrollToEdge } from "@a-drowned-fish/rox-v";
 
 const { scrollContainerRef, scroll } = useScrollToEdge();
+const scrollTo18 = () => scroll("[data-item='18']");
 </script>

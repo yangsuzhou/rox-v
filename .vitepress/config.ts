@@ -74,9 +74,6 @@ export default defineConfig({
         resolve: {
             alias: {
                 "@": fileURLToPath(new URL("./", import.meta.url)),
-                "@a-drowned-fish/rox-v": fileURLToPath(
-                    new URL("../../packages/rox-v/components/index.ts", import.meta.url),
-                ),
             },
         },
         ssr: {
