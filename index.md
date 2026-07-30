@@ -9,9 +9,9 @@ hero:
         - theme: brand
           text: 快速开始
           link: /components/button
-        - theme: alt
-          text: 组件总览
-          link: /components/button
+        # - theme: alt
+        #   text: 组件总览
+        #   link: /components/button
 
 features:
     - title: 基础组件
