@@ -35,7 +35,7 @@ pnpm add @a-drowned-fish/rox-v
 ```ts
 import { createApp } from "vue";
 import RoxV from "@a-drowned-fish/rox-v";
-import "@a-drowned-fish/rox-v/formstyle"; // 引入组件样式
+// import "@a-drowned-fish/rox-v/dist/style.css"; // 如果需要样式 (SSR OR SSG 建议引入， 避免页面样式闪烁)
 
 createApp(App).use(RoxV).mount("#app");
 ```
