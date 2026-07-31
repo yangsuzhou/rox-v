@@ -19,5 +19,5 @@ import { ref } from "vue";
 import { FrameSlide } from "@a-drowned-fish/rox-v";
 
 const index = ref(0);
-const items = ["#646cff", "#42b883", "#ff7a45"];
+const items = ["#646cff", "#42b883", "#ff7a45", "#ffc107", "#000", "#f00", "#0f0", "#00f", "#ccc", "#eee", "orange", "yellow"];
 </script>

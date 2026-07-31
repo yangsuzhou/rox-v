@@ -1,6 +1,6 @@
 <template>
-    <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden">
-        <FadeInOut v-model="index" :items="items" :duration="1500" :delay="3000">
+    <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; width: 30vw; height: 20vh">
+        <FadeInOut v-model="index" :items="items" :duration="1500" :delay="3000" style="height: 100%">
             <template #default="{ item, index }">
                 <div
                     style="height: 180px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px"

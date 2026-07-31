@@ -1,6 +1,6 @@
 <template>
     <div style="display: flex; flex-direction: column; gap: 12px">
-        <InputOtp v-model="code" :length="6" @complete="onComplete" />
+        <InputOtp v-model="code" :length="6" @complete="onComplete" :auto-focus="true" />
         <div>已输入：{{ code }}</div>
     </div>
 </template>

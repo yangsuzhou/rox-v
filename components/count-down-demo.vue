@@ -9,8 +9,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { Button, CountDown } from "@a-drowned-fish/rox-v";
 
-const remain = ref(10000);
+const remain = ref(0);
+onMounted(() => {
+    remain.value = 10000;
+});
 </script>
