@@ -10,7 +10,7 @@
                 </div>
             </template>
         </FrameSlide>
-        <div style="padding: 8px; text-align: center">当前帧：{{ index }}</div>
+        <div style="padding: 8px; text-align: center">当前帧：{{ index + 1 }}</div>
     </div>
 </template>
 
@@ -19,5 +19,23 @@ import { ref } from "vue";
 import { FrameSlide } from "@a-drowned-fish/rox-v";
 
 const index = ref(0);
-const items = ["#646cff", "#42b883", "#ff7a45", "#ffc107", "#000", "#f00", "#0f0", "#00f", "#ccc", "#eee", "orange", "yellow"];
+const items = [
+    "#646cff",
+    "#42b883",
+    "#ff7a45",
+    "#ffc107",
+    "#000",
+    "#f00",
+    "#0f0",
+    "#00f",
+    "#ccc",
+    "#eee",
+    "orange",
+    "yellow",
+    "brown",
+    "skyblue",
+    "purple",
+    "pink",
+    "indigo",
+];
 </script>
