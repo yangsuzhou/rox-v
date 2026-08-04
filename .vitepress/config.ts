@@ -45,6 +45,7 @@ export default defineConfig({
                 items: [
                     { text: "v-lazy 图片懒加载", link: "/components/lazy" },
                     { text: "v-fade 淡入显隐", link: "/components/fade" },
+                    { text: "v-slide-in 淡入显隐 (推荐)", link: "/components/slide-in" },
                 ],
             },
             {

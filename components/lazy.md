@@ -1,7 +1,5 @@
 # v-lazy 图片懒加载
 
-基于 `IntersectionObserver` 的图片懒加载指令，元素进入视口后才设置 `src` 进行加载，加载完成后自动停止监听。
-
 ## 基础用法
 
 <LazyDemo />
@@ -63,9 +61,3 @@ const scrollBox = ref<HTMLElement | null>(null);
 ```
 
 组件内部已通过 `watch(root)` 监听 ref 变化并在其被赋值后重建 Observer，因此 `mounted` 时 `root` 为 `null` 也能在后续正确生效。
-
-## 生命周期
-
-- `mounted`：注册 `IntersectionObserver`，进入视口后设置 `src` 并 `disconnect`。
-- `updated`：若 `src` 变化，直接更新图片。
-- `unmounted`：断开观察。

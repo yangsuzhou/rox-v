@@ -1,6 +1,6 @@
 # v-fade 淡入显隐
 
-元素进入视口时，从「透明度 0 + 向下偏移 `distance`」平滑过渡到「完全显示」，只播放一次。基于 `IntersectionObserver` 与 `setTickOut` 实现。
+元素进入视口时，从「透明度 0 + 向下偏移 `distance`」平滑过渡到「完全显示」，只播放一次。
 
 ## 基础用法
 
