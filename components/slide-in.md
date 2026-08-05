@@ -79,17 +79,22 @@ type SlideInBindingValue =
 
 ## 参数说明
 
-| 参数             | 类型                             | 默认值                   | 说明                                                                         |
-| ---------------- | -------------------------------- | ------------------------ | ---------------------------------------------------------------------------- |
-| `duration`       | `number`                         | `300`                    | 动画时长（毫秒）                                                             |
-| `delay`          | `number`                         | `300`                    | 进入视口后延迟多久开始动画（毫秒）                                           |
-| `x`              | `number`                         | `0`                      | X 轴起始位移（像素），负值表示从左侧进入                                     |
-| `y`              | `number`                         | `100`                    | Y 轴起始位移（像素），负值表示从上方进入                                     |
-| `z`              | `number`                         | `0`                      | Z 轴起始位移（像素），用于 3D 效果                                           |
-| `ease`           | `string`                         | `'ease-in'`              | CSS 缓动函数，支持 `ease`、`ease-in`、`ease-out`、`ease-in-out`、`linear` 等 |
-| `startOpacity`   | `number`                         | `0`                      | 动画起始透明度（0-1）                                                        |
-| `endOpacity`     | `number`                         | `1`                      | 动画结束透明度（0-1）                                                        |
-| `observeOptions` | `UseIntersectionObserverOptions` | `{ rootMargin: '-2px' }` | IntersectionObserver 配置项                                                  |
+| 参数                           | 类型                             | 默认值                   | 说明                                                                                                                                |
+| ------------------------------ | -------------------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `duration`                     | `number`                         | `300`                    | 动画时长（毫秒）                                                                                                                    |
+| `delay`                        | `number`                         | `300`                    | 进入视口后延迟多久开始动画（毫秒）                                                                                                  |
+| `x`                            | `number`                         | `0`                      | X 轴起始位移（像素），负值表示从左侧进入                                                                                            |
+| `y`                            | `number`                         | `100`                    | Y 轴起始位移（像素），负值表示从上方进入                                                                                            |
+| `z`                            | `number`                         | `0`                      | Z 轴起始位移（像素），用于 3D 效果                                                                                                  |
+| `ease`                         | `string`                         | `'ease-in'`              | CSS 缓动函数，支持 `ease`、`ease-in`、`ease-out`、`ease-in-out`、`linear` 等                                                        |
+| `startOpacity`                 | `number`                         | `0`                      | 动画起始透明度（0-1）                                                                                                               |
+| `endOpacity`                   | `number`                         | `1`                      | 动画结束透明度（0-1）                                                                                                               |
+| `withNoLazyLoadOrOnlyOneMedia` | `boolean`                        | `false`                  | 元素内部是否存在非懒加载的媒体资源或者仅存在一个媒体资源(如果是一个懒加载的媒体资源，会在资源被懒加载出现后执行动画) ，默认 `false` |
+| `observeOptions`               | `UseIntersectionObserverOptions` | `{ rootMargin: '-2px' }` | IntersectionObserver 配置项                                                                                                         |
+
+#### 注意事项
+
+- `withNoLazyLoadOrOnlyOneMedia`: 除非你清楚所使用资源的加载时机，否则建议使用默认值 `false`
 
 ## 使用场景
 
