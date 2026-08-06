@@ -89,9 +89,17 @@ type SlideInBindingValue =
 | `ease`           | `string`                         | `'ease-in'`              | CSS 缓动函数，支持 `ease`、`ease-in`、`ease-out`、`ease-in-out`、`linear` 等 |
 | `startOpacity`   | `number`                         | `0`                      | 动画起始透明度（0-1）                                                        |
 | `endOpacity`     | `number`                         | `1`                      | 动画结束透明度（0-1）                                                        |
-| `withMedia`      | `boolean`                        | `false`                  | 元素内部是否存在媒体资源 ，默认 `false`                                      |
+| `withMedia`      | `boolean`                        | `false`                  | (慎用) 元素内部是否存在媒体资源 ，默认 `false`                               |
 | `mediaTimeout`   | `number`                         | `10000`                  | 媒体资源加载超时时间（毫秒），默认 10000ms                                   |
 | `observeOptions` | `UseIntersectionObserverOptions` | `{ rootMargin: '-2px' }` | IntersectionObserver 配置项                                                  |
+
+#### withMedia为true时的注意事项
+
+- 当 `withMedia` 为 `true` 且 内部 媒体资源 还是 懒加载情况下，注意x、y、z轴的位移值，如果偏移后出现在视口外，动画将无法正常进行。
+- 如果内部资源存在懒加载情况，建议控制x、y、z，确保偏移后的元素也在视口内
+- 如果内部资源不是懒加载，可以正常更改x、y、z轴的位移值。
+
+### 示例
 
 ## 使用场景
 
