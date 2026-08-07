@@ -55,7 +55,7 @@ export default defineConfig({
                     { text: "useScrollToElement", link: "/hooks/use-scroll-to-element" },
                     { text: "useScrollToCenter", link: "/hooks/use-scroll-to-center" },
                     { text: "useScrollToEdge", link: "/hooks/use-scroll-to-edge" },
-                    { text: "useScrollIntoElement", link: "/hooks/use-scroll-into-element" },
+                    { text: "useScrollIntoElement (推荐)", link: "/hooks/use-scroll-into-element" },
                     { text: "useHorizontal", link: "/hooks/use-horizontal" },
                     { text: "useDocumentVisibility", link: "/hooks/use-document-visibility" },
                 ],

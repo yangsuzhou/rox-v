@@ -20,8 +20,7 @@ const containerRef = ref<HTMLElement | null>(null);
 const { scroll } = useScrollIntoElement(containerRef);
 
 const scrollToItem = (index: number) => {
-    scroll({
-        selector: `#item-${index}`,
+    scroll(`#item-${index}`, {
         vertical: false,
         behavior: "smooth",
     });
@@ -61,8 +60,7 @@ import { useScrollIntoElement } from "@a-drowned-fish/rox-v";
 const { scroll, scrollRef } = useScrollIntoElement();
 
 const scrollToItem = (index: number) => {
-    scroll({
-        selector: `#item-${index}`,
+    scroll(`#item-${index}`, {
         vertical: false,
         behavior: "smooth",
     });
@@ -86,8 +84,7 @@ import { useScrollIntoElement } from "@a-drowned-fish/rox-v";
 const { scroll, scrollRef } = useScrollIntoElement();
 
 const scrollToItem = (index: number) => {
-    scroll({
-        selector: `#item-${index}`,
+    scroll(`#item-${index}`, {
         vertical: false,
         dir: "rtl",
         behavior: "smooth",
@@ -98,22 +95,21 @@ const scrollToItem = (index: number) => {
 
 ## 参数
 
-| 参数        | 说明                 | 类型                                             | 默认值                                         |
-| ----------- | -------------------- | ------------------------------------------------ | ---------------------------------------------- |
-| `container` | 滚动容器元素（可选） | `MaybeRefOrGetter<Element \| null \| undefined>` | 使用 `scrollRef` 或 `document.documentElement` |
+| 参数        | 说明                 | 默认值                                         |
+| ----------- | -------------------- | ---------------------------------------------- |
+| `container` | 滚动容器元素（可选） | 使用 `scrollRef` 或 `document.documentElement` |
 
 ## 返回值
 
-| 字段        | 说明                                      |
-| ----------- | ----------------------------------------- |
-| `scroll`    | `(arg: ScrollArg)` 滚动到匹配选择器的元素 |
-| `scrollRef` | 模板 ref，用于绑定滚动容器元素            |
+| 字段        | 说明                                          |
+| ----------- | --------------------------------------------- |
+| `scroll`    | `(selector, options?)` 滚动到匹配选择器的元素 |
+| `scrollRef` | 模板 ref，用于绑定滚动容器元素                |
 
-## ScrollArg 选项
+## ScrollOptions 选项
 
 | 属性       | 说明                       | 类型                       | 默认值     |
 | ---------- | -------------------------- | -------------------------- | ---------- |
-| `selector` | 目标元素的选择器           | `string`                   | 必填       |
 | `vertical` | 是否纵向滚动               | `boolean`                  | `true`     |
 | `behavior` | 滚动行为                   | `ScrollBehavior`           | `"smooth"` |
 | `dir`      | 布局方向（横向滚动时生效） | `"ltr" \| "rtl" \| "auto"` | `"auto"`   |
@@ -121,6 +117,7 @@ const scrollToItem = (index: number) => {
 ## 说明
 
 - 容器的确定优先级：`container` 参数 → `scrollRef.value` → `document.documentElement`
+- `scroll` 方法第一个参数为选择器字符串，第二个参数为可选配置项
 - 纵向滚动时，`dir` 参数不生效
 - 横向滚动时，`dir` 参数用于正确处理 RTL 布局下的滚动方向
 - RTL 布局下，横向滚动的坐标系统会自动适配，确保滚动到正确位置
