@@ -1,7 +1,5 @@
 # useIntersectionObserver
 
-对 `IntersectionObserver` 的轻量封装，支持传入 `ref` / `getter` 形式的 `target` 与 `root`，并在它们变化时自动重建观察。
-
 ## 基础用法
 
 <UseIntersectionObserverDemo />
@@ -25,11 +23,11 @@ function useIntersectionObserver(
 
 ## 参数
 
-| 参数 | 说明 |
-| --- | --- |
-| `target` | 被观察的元素，可传 `ref` / `getter` / 直接元素 |
-| `callback` | `IntersectionObserver` 回调，接收 `(entries, observer)` |
-| `options` | 同 `IntersectionObserver` 配置，其中 `root` 支持 `ref`（`MaybeRefOrGetter`） |
+| 参数       | 说明                                                                         |
+| ---------- | ---------------------------------------------------------------------------- |
+| `target`   | 被观察的元素，可传 `ref` / `getter` / 直接元素                               |
+| `callback` | `IntersectionObserver` 回调，接收 `(entries, observer)`                      |
+| `options`  | 同 `IntersectionObserver` 配置，其中 `root` 支持 `ref`（`MaybeRefOrGetter`） |
 
 ### UseIntersectionObserverOptions
 
@@ -43,10 +41,10 @@ interface UseIntersectionObserverOptions extends Omit<IntersectionObserverInit, 
 
 ## 返回值
 
-| 字段 | 说明 |
-| --- | --- |
-| `observe` | 立即（重新）创建并启动观察 |
-| `disconnect` | 断开观察并释放资源 |
+| 字段         | 说明                       |
+| ------------ | -------------------------- |
+| `observe`    | 立即（重新）创建并启动观察 |
+| `disconnect` | 断开观察并释放资源         |
 
 ## 说明
 

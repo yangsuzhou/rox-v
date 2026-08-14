@@ -1,7 +1,5 @@
 # tick 轮询工具
 
-基于 `requestAnimationFrame` 的轻量时间调度工具，适合做进度动画、倒计时、轮询等需要「按帧回调 + 进度比例」的场景。
-
 ## 两个 API
 
 ```ts
@@ -10,7 +8,7 @@ import { setTickOut, setTickLoop } from "@a-drowned-fish/rox-v";
 
 ### setTickLoop(options, delay?)
 
-启动一个基于 `rAF` 的循环，返回用于停止循环的 `cancel` 函数。
+启动一个循环，返回用于停止循环的 `cancel` 函数。
 
 ```ts
 interface TickOptions {
@@ -24,7 +22,7 @@ function setTickLoop(options: TickOptions, duration?: number): () => void;
 
 ### setTickOut(options)
 
-`Promise` 化的单次调度，进度到达 `1` 时 `resolve`。
+`Promise` 化的单次调度，进度到达 `1` 时 `resolve`, 返回用于停止循环的 `cancel` 函数。
 
 ```ts
 function setTickOut(cb: () => void, duration?: number): () => void;

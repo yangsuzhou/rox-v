@@ -38,6 +38,7 @@ export default defineConfig({
                     { text: "FadeInOutSlideDot 淡入淡出圆点", link: "/components/fade-in-out-slide-dot" },
                     { text: "GradientArea 渐变区域", link: "/components/gradient-area" },
                     { text: "Media 媒体懒加载", link: "/components/media" },
+                    { text: "MasonryWall 瀑布流", link: "/components/masonry-wall" },
                 ],
             },
             {
