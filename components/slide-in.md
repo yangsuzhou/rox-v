@@ -53,24 +53,6 @@
 <div v-slide-in="500">内容</div>
 ```
 
-## 指令值类型
-
-```ts
-type SlideInBindingValue =
-    | number // 等价于 delay
-    | {
-          duration?: number; // 动画时长（ms），默认 300
-          delay?: number; // 进入视口后延迟开始（ms），默认 300
-          x?: number; // X 轴起始位移（px），默认 0
-          y?: number; // Y 轴起始位移（px），默认 100
-          z?: number; // Z 轴起始位移（px），默认 0
-          ease?: string; // 缓动函数，默认 'ease-in'
-          startOpacity?: number; // 起始透明度（0-1），默认 0
-          endOpacity?: number; // 结束透明度（0-1），默认 1
-          observeOptions?: UseIntersectionObserverOptions; // IntersectionObserver 配置
-      };
-```
-
 ## Modifiers
 
 | Modifier | 说明                                             |

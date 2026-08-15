@@ -27,21 +27,3 @@
 <!-- 不传值：使用默认参数 -->
 <div v-fade>...</div>
 ```
-
-## 指令值类型
-
-```ts
-type FadeBindingValue =
-    | number // 等价于 delay
-    | {
-          duration?: number; // 动画时长（ms），默认 500
-          delay?: number; // 进入视口后延迟开始（ms），默认 0
-          distance?: number; // 起始向下偏移量（px），默认 40
-          observeOptions?: UseIntersectionObserverOptions;
-      };
-```
-
-## 说明
-
-- 动画仅触发一次：进入视口后标记 `played` 并 `disconnect` 观察。
-- `observeOptions.root` 同样支持传入 `ref`，用法同 [v-lazy](./lazy#指定滚动容器-root-重要)。
