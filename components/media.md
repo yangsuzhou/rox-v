@@ -46,20 +46,3 @@
 | `pause()`  | 暂停                |
 | `toggle()` | 切换播放 / 暂停     |
 | `video`    | 原生 video 元素引用 |
-
-## 进阶：指定 root
-
-`observeOptions.root` 支持传入 `ref`（`MaybeRefOrGetter`）。由于模板 ref 在子元素 `mounted` 时可能尚未赋值，本组件内部已通过 `watch` 监听 `root` 变化并重建 Observer：
-
-```vue
-<script setup lang="ts">
-import { ref } from "vue";
-const scrollBox = ref<HTMLElement | null>(null);
-</script>
-
-<template>
-    <div ref="scrollBox" style="overflow: auto; height: 300px">
-        <Media type="video" src="xxx.mp4" :observe-options="{ root: scrollBox }" />
-    </div>
-</template>
-```
