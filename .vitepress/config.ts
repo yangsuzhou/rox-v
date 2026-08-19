@@ -39,6 +39,8 @@ export default defineConfig({
                     { text: "GradientArea 渐变区域", link: "/components/gradient-area" },
                     { text: "Media 媒体懒加载", link: "/components/media" },
                     { text: "MasonryWall 瀑布流", link: "/components/masonry-wall" },
+                    { text: "XIcon 关闭图标", link: "/components/x-icon" },
+                    { text: "ToTopIcon 回到顶部", link: "/components/to-top-icon" },
                 ],
             },
             {
