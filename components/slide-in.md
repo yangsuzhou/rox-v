@@ -73,7 +73,7 @@
 | `endOpacity`     | `number`                         | `1`                      | 动画结束透明度（0-1）                                                        |
 | `withMedia`      | `boolean`                        | `false`                  | (慎用) 元素内部是否存在媒体资源 ，默认 `false`                               |
 | `mediaTimeout`   | `number`                         | `10000`                  | 媒体资源加载超时时间（毫秒），默认 10000ms                                   |
-| `observeOptions` | `UseIntersectionObserverOptions` | `{ rootMargin: '-2px' }` | IntersectionObserver 配置项                                                  |
+| `observeOptions` | `UseIntersectionObserverOptions` | `{ rootMargin: '-2px' }` | 配置项                                                                       |
 
 #### withMedia为true时的注意事项
 
