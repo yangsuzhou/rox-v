@@ -25,6 +25,7 @@ export default defineConfig({
                     { text: "Popup 弹窗", link: "/components/popup" },
                     { text: "Tab 选项卡", link: "/components/tab" },
                     // { text: "Menu 菜单", link: "/components/menu" },
+                    { text: "SingleSelect 单选", link: "/components/single-select" },
                     // { text: "Select 下拉选择", link: "/components/select" },
                     { text: "SliderCaptcha 滑块验证", link: "/components/slider-captcha" },
                     { text: "CountDown 倒计时", link: "/components/count-down" },
