@@ -15,16 +15,18 @@
 
 ## Props
 
-| 参数           | 说明                                   | 类型                | 默认值      |
-| -------------- | -------------------------------------- | ------------------- | ----------- |
-| `items`        | 选项数据数组                           | `Array<any>`        | `[]`        |
-| `duration`     | 展开 / 收起过渡动画时长（ms）          | `number`            | `150`       |
-| `animation`    | 过渡动画类型                           | `"fade" \| "slide"` | `"fade"`    |
-| `maxHeight`    | 选项列表容器最大高度（px），超出可滚动 | `number`            | `260`       |
-| `bg`           | 选项列表容器背景色                     | `string`            | `"#ffffff"` |
-| `offsetY`      | 选项列表纵向偏移（px）                 | `number`            | `10`        |
-| `offsetX`      | 选项列表横向偏移（px）                 | `number`            | `0`         |
-| `optionsClass` | 选项列表容器自定义类名                 | `string`            | `""`        |
+| 参数             | 说明                                                             | 类型                                     | 默认值      |
+| ---------------- | ---------------------------------------------------------------- | ---------------------------------------- | ----------- |
+| `items`          | 选项数据数组                                                     | `Array<any>`                             | `[]`        |
+| `duration`       | 展开 / 收起过渡动画时长（ms）                                    | `number`                                 | `150`       |
+| `animation`      | 过渡动画类型                                                     | `"fade" \| "slide"`                      | `"fade"`    |
+| `maxHeight`      | 选项列表容器最大高度（px），超出可滚动                           | `number`                                 | `260`       |
+| `bg`             | 选项列表容器背景色                                               | `string`                                 | `"#ffffff"` |
+| `offsetY`        | 选项列表纵向偏移（px）                                           | `number`                                 | `10`        |
+| `offsetX`        | 选项列表横向偏移（px）                                           | `number`                                 | `0`         |
+| `optionsClass`   | 选项列表容器自定义类名                                           | `string`                                 | `""`        |
+| `disabled`       | 点击无任何反应                                                   | `boolean`                                | `false`     |
+| `itemDisabledFn` | 下拉选项option是否禁用的函数（点击无任何反应），返回值为 boolean | `(item: any, index?: number) => boolean` | `undefined` |
 
 ## 事件
 
