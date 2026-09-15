@@ -40,17 +40,18 @@ docs/rox-v/
 ```
 
 每个组件/Hook 文档由两部分组成：
+
 - `.md` 文件：文档正文（API 说明、使用示例等）
 - `.vue` 文件：交互式演示 Demo
 
 ## 覆盖的模块
 
-| 类别 | 内容 |
-|------|------|
-| **组件** | Button, Input, InputOtp, Popup, Tab, Menu, Select, SliderCaptcha, CountDown, Panel, Collapse, Loading, Toast, DropMenu, FrameSlide, FadeInOut, GradientArea, Media |
-| **指令** | v-lazy 图片懒加载、v-fade 淡入显隐 |
-| **Hooks** | useIntersectionObserver, useScrollToElement, useScrollToCenter, useScrollToEdge, useHorizontal, useDocumentVisibility |
-| **工具** | tick 轮询调度器 |
+| 类别      | 内容                                                                                                                                                                                    |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **组件**  | Slider, MasonryWall, Button, Input, InputOtp, Popup, Tab, Menu, Select, SliderCaptcha, CountDown, Panel, Collapse, Loading, Toast, DropMenu, FrameSlide, FadeInOut, GradientArea, Media |
+| **指令**  | v-lazy 图片懒加载、v-fade 淡入显隐                                                                                                                                                      |
+| **Hooks** | useIntersectionObserver, useScrollToElement, useScrollToCenter, useScrollToEdge, useHorizontal, useDocumentVisibility                                                                   |
+| **工具**  | tick 轮询调度器                                                                                                                                                                         |
 
 ## 技术栈
 

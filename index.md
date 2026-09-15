@@ -15,7 +15,7 @@ hero:
 
 features:
     - title: 基础组件
-      details: Button、Input、InputOtp、Popup、Tab、Menu、Select 等常用表单与交互组件，开箱即用。
+      details: Slider、MasonryWall、 Button、Input、InputOtp、Popup、Tab、Menu、Select 等常用表单与交互组件，开箱即用。
     - title: 指令
       details: v-lazy 图片懒加载、v-fade 显隐淡入，几行代码即可为元素添加高性能行为。
     - title: Hooks

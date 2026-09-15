@@ -1,7 +1,5 @@
 # useDocumentVisibility
 
-监听 `document.visibilitychange`，返回当前页面可见性（只读 `ref`）。常用于页面隐藏时暂停视频 / 轮询，恢复可见时继续。
-
 ## 基础用法
 
 <UseDocumentVisibilityDemo />
@@ -24,10 +22,10 @@ function useDocumentVisibility(options?: {
 
 ## 参数
 
-| 参数 | 说明 | 默认值 |
-| --- | --- | --- |
-| `window` | 自定义 window 对象（SSR 友好） | `globalThis.window` |
-| `initialValue` | 初始可见性 | `"visible"` |
+| 参数           | 说明                           | 默认值              |
+| -------------- | ------------------------------ | ------------------- |
+| `window`       | 自定义 window 对象（SSR 友好） | `globalThis.window` |
+| `initialValue` | 初始可见性                     | `"visible"`         |
 
 ## 返回值
 
