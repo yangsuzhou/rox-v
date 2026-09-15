@@ -24,6 +24,7 @@ export default defineConfig({
                     { text: "InputOtp 验证码输入框", link: "/components/input-otp" },
                     { text: "Popup 弹窗", link: "/components/popup" },
                     { text: "Tab 选项卡", link: "/components/tab" },
+                    { text: "Slider 轮播图", link: "/components/slider" },
                     // { text: "Menu 菜单", link: "/components/menu" },
                     { text: "SingleSelect 单选", link: "/components/single-select" },
                     // { text: "Select 下拉选择", link: "/components/select" },
