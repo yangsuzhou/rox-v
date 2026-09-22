@@ -83,7 +83,7 @@ export default defineConfig({
             },
         },
         ssr: {
-            noExternal: [/@a-drowned-fish\/rox-v/, /fish-helper/, /@punish\/masonry-wall/],
+            noExternal: [/@a-drowned-fish\/rox-v/, /fish-helper/, /@punish\/masonry-wall/, "@punish/slider-captcha"],
         },
     },
 });
